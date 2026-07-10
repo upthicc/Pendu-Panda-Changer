@@ -366,7 +366,9 @@
         result = await blobToDataUrl(await res.blob());
       }
       if (!result){
-        throw new Error('The AI replied without an image. Tap the button to try again.');
+        var raw = '';
+        try { raw = ' Raw reply: ' + JSON.stringify(data).slice(0, 300); } catch(e){}
+        throw new Error('The AI replied without an image.' + raw);
       }
 
       changedDataUrl = await toneMatch(result);
