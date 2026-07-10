@@ -157,7 +157,7 @@
 
 <footer>
   Runs on pollinations.ai's kontext model.<br><br>
-  <b style="color:var(--black)">Buy Me A Beer 🍺</b><br>
+  <b style="color:var(--black)">Buy Me A Taco 🌮</b><br>
   Solana Wallet:<br>
   <span class="wallet" id="wallet">DohjxeYVCxx3MefFrrg6rUdpVxhVEA88P4Cn4wXTTzXc</span><br>
   <button class="quiet" id="copyWallet" type="button">Copy Wallet</button>
@@ -419,12 +419,12 @@
     show(uploadCard);
   });
 
-  // ---------- copy the beer wallet ----------
+  // ---------- copy the taco wallet ----------
   var copyBtn = document.getElementById('copyWallet');
   copyBtn.addEventListener('click', function(){
     var addr = document.getElementById('wallet').textContent.trim();
     function done(){
-      copyBtn.textContent = 'Copied! 🍺';
+      copyBtn.textContent = 'Copied! 🌮;
       setTimeout(function(){ copyBtn.textContent = 'Copy wallet'; }, 1500);
     }
     if (navigator.clipboard && navigator.clipboard.writeText){
