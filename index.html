@@ -424,7 +424,7 @@
   copyBtn.addEventListener('click', function(){
     var addr = document.getElementById('wallet').textContent.trim();
     function done(){
-      copyBtn.textContent = 'Copied! 🌮;
+      copyBtn.textContent = 'Copied! 🌮';
       setTimeout(function(){ copyBtn.textContent = 'Copy wallet'; }, 1500);
     }
     if (navigator.clipboard && navigator.clipboard.writeText){
