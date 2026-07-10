@@ -169,7 +169,8 @@
   // PASTE YOUR CLOUDFLARE WORKER URL BETWEEN THE QUOTES BELOW.
   // It looks like: https://pendu-panda.YOUR-SUBDOMAIN.workers.dev
   // ============================================================
-  var WORKER_URL = 'pendu-panda.upthicc.workers.dev';
+  var WORKER_URL = 'https://pendu-panda.upthicc.workers.dev';
+  if (WORKER_URL.indexOf('http') !== 0) WORKER_URL = 'https://' + WORKER_URL;
 
   var uploadCard = document.getElementById('uploadCard');
   var resultCard = document.getElementById('resultCard');
